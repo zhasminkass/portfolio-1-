@@ -1,0 +1,431 @@
+.body {
+    width: 100%;
+    margin: 0;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+
+}
+
+#site{
+    position: relative;
+    min-height: 100%;
+}
+
+#sidebar {
+
+
+    /* animation */
+    -moz-transition: all 650ms; /*firefox */
+    -webkit-transition: all 650ms; /*safari*/
+    transition: all 650ms;
+}
+
+#sidebar.active{
+    left: 20px;
+}
+
+
+#header {
+    display: block;
+    text-align:right;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    margin-right:0%;
+
+    background: #1A0B2E;
+    box-shadow: 0px 6px 22px -3px rgba(0, 0, 0, 0.1);
+}
+
+
+#header ul li:first-child {
+    text-align: left;
+    margin-left: 125px;
+    margin-top: 30px;
+    width: 150px;
+    color: white;
+    font-size: 1.95em;
+    list-style: none;
+    padding: 0px 0px 0px 0px;
+    
+}
+
+#header ul li:not(:first-child) {
+    display: inline-block;
+    font-size: 1.1em;
+    list-style: none;
+    margin: 5px 15px;
+}
+
+
+#header ul li a {
+    font-size: 20px;
+    position: relative;
+    right: 15px;
+    bottom: 45px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Bellota', cursive;
+}
+
+#header ul li a:hover {color:darkgoldenrod}
+
+
+/* Portfolio */
+#Prtfl {
+    display: block;
+    width: 100%;
+    height: 520px;
+    margin: 0px;
+    padding: 0;
+    
+
+
+    background: #10071E;
+}
+
+#me {
+    position: absolute;
+    width: 258px;
+    height: 259px;
+    left: 350px;
+    top: 185px;
+}
+
+/* Gradient */
+
+#gradient {
+
+
+    background: radial-gradient(50% 50% at 50% 50%, #7444a1e8 0%, rgba(50, 15, 133, 0) 100%);
+}
+
+.gr1{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    left: 300px;
+    top: 170px;
+}
+
+
+/* Arrow */
+
+#arrow {
+    
+    position: absolute;
+    width: 75px;
+    height: 81.86px;
+    left: 565px;
+    top: 180px;
+
+    transform: matrix(2, -1, -0, 1, 0, 0);
+
+}
+
+.title{
+    font-size: 25px;
+    color: white;
+    font-family: 'Preahvihear', sans-serif;
+}
+#tt2{
+    margin-top: 10px;
+}
+
+.subtitle{
+    font-size: 18px;
+    color: white;
+    font-family: 'Bellota', cursive;
+}
+
+.subtitle2{
+    position: relative;
+    top: 395px;
+    font-size: 14px;
+    color: white;
+    font-family: 'Bellota', cursive;
+}
+
+#text1 {
+    display: inline-block;
+    position: absolute;
+    top: 195px;
+    left: 675px;
+    color: white;
+    /* font-family: 'Bellota', cursive; */
+}
+
+.i{
+    color: rgb(104,44,179);
+    text-decoration: none;
+}
+
+#text11{
+    display: block;
+    margin-left: 675px;
+    
+}
+
+.std{
+    position: relative;
+    top: 305px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Bellota', cursive;
+
+}
+
+#text111{
+    display: block;
+    margin-left: 675px;
+}
+
+#text2{
+    position: absolute;
+    top: 325px;
+    left: 675px;
+    color: white;
+    font-family: 'Preahvihear', sans-serif;
+}
+
+#text3{
+    position: absolute;
+    /* top: -50px; */
+    left: 350px;
+    color: white;
+    font-family: 'Preahvihear', sans-serif;
+}
+
+#text4 {
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    color: white;
+    font-family: 'Bellota', cursive;
+}
+#text5 {
+    position: absolute;
+    top: 350px;
+    left: 260px;
+    color: white;
+    font-family: 'Bellota', cursive;
+}
+
+
+
+#about{
+    display: block;
+    width: 100%;
+    height: 900px;
+    position: absolute;
+
+    padding-top: 100px;
+
+    background: #10071E;
+}
+
+
+#arrow2{
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    left: 710px;
+    top: 230px;
+
+    transform: matrix(2, 0, -0.5, 1.5, 0, 0);
+}
+
+#arrow3{
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    left: 530px;
+    top: 450px;
+
+    transform: matrix(2, 0, 0.5, 1.5, 0, 0);
+}
+
+
+#phone{
+    position: absolute;
+    width: 250px;
+    left: 970px;
+    top: 195px;
+    
+}
+
+#laptop{
+    position: absolute;
+    width: 415px;
+    left: 47px;
+    top: 465px;
+    margin: right 10px;
+}
+
+
+.gr2{
+    position: absolute;
+    width: 350px;
+    height: 450px;
+    left: 917px;
+    top: 150px;
+}
+
+.gr3{
+    position: absolute;
+    width: 450px;
+    height: 350px;
+    left: 25px;
+    top: 430px;
+}
+
+
+
+#end {
+    display: block;
+    position:absolute;
+    top: 2220px;
+    margin: 0;
+
+    width: 100%;
+    height: 100px;
+
+    background: #0d031b;
+}
+
+.text1{
+    position: relative;
+    top: 35px;
+    align-items: center;
+    margin-left: 50%;
+    font-size: 18px;
+    color: rgb(140, 140, 140);
+    font-family: 'Bellota', cursive;
+
+    
+}
+
+.by{
+    font-size: 14px;
+    position: relative;
+    left: -70px;
+}
+
+#project{
+    display: block;
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    margin-top: 900px;
+    
+    
+
+
+
+    background: #10071E;
+}
+
+.gr4{
+    position: absolute;
+    width: 800px;
+    height: 700px;
+    left: 300px;
+    top: 0px;
+    margin-top: 0px;
+    padding-top: 80px;
+}
+
+#btn{
+    display: block;
+    margin-left: 450px;
+    margin-top:  300px;
+}
+
+/* animation */
+#btn_lamp{
+    position: absolute;
+    left: 520px;
+    top: 340px;
+
+
+}
+
+/* .anim_btn{
+    offset-path: path('M1,10 C10,0 0,30 150,00'); 
+    animation: move 3s ease-out infinite alternate;
+    
+    
+}
+
+@keyframes move {
+    0% { 
+      offset-distance: 0%; /* стартуем в начале траектории */
+    /* }
+    50%{
+
+    }
+    100% { 
+      offset-distance: 100%; и прекращаем движение в конце траектории
+    }
+  } */ 
+
+#btn_wall{
+    position: absolute;
+    width: 500px;
+}
+
+#btn-text{
+    position: absolute;
+    top: 335px;
+    left: 710px;
+    color: white;
+    font-family: 'Preahvihear', sans-serif;
+    
+}
+
+/* #btn_mini{
+    position: absolute;
+    right: 485px;
+    top: 310px;
+} */
+
+#prj_text{
+    position: absolute;
+    top: 50px;
+    left: 370px;
+    color: white;
+    font-family: 'Preahvihear', sans-serif;
+
+    padding-top: 80px;
+}
+
+#btn_m{
+    position: absolute;
+    left: 755px;
+    top: 415px;
+    
+}
+
+.btn_tt{
+    position: absolute;
+    font-family: 'Preahvihear', sans-serif;
+    font-size: 14px;
+
+    top: 5px;
+    left: 35px;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

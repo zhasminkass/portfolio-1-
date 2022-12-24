@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,400;0,700;1,300&family=Preahvihear&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portpholio</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div id="site">
+        <!-- <div id="sidebar">
+            <div class="toggle-btn" onclick="openMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul>
+                <li>Menu</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">My progects</a></li>
+            </ul>
+        </div>
+
+        <script>
+            function openMenu(){
+                document.getElementById("sidebar").classList.toggle('active');
+            }
+        </script> -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $("#header").on("click","a", function (event) {
+                event.preventDefault();
+                var id  = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({scrollTop: top}, 1500);
+            });
+        });
+        </script>
+
+        <div id="header">
+            <ul>
+                <li><img src="image/Logo.png"</li>
+                <li id="home"><a href="#Prtfl">Home</a></li>
+                <li id="adout"><a href="#about">About me</a></li>
+                <li id="progects"><a href="#project">My projects</a></li>
+            </ul>
+        </div>
+
+        <div id="Prtfl">
+            <div id="gradient" class="gr1"></div>
+            <img id="me" src="image/008668f9497a930c366c9a2c1b816991 (1).png" alt="">
+            <img id="arrow" src="image/strelka — копия.png" alt="">
+            <h2 id="text1" class="title">Hello! I'm <span><a class="i" href="https://instagram.com/____z.h.a.s.i.k?igshid=Yzg5MTU1MDY=" >Zhasmin</a></span></h2>
+            <h3 id="text11" class="std">A student, who</h4>
+            <h1 id="text2" class="title"><p>Is studying web development,</p> 
+                                    <p>programming and creating websites...</p></h1>
+            <h4 id="text111" class="subtitle2">but now i'm just studying, and here is my portfolio.</h4>
+        </div>
+        <div id="about">
+            <h1 id="text3"><p>Start learning programming.</p></h1>
+            <h3 id="text4"><p>I started studying programming before entering AlmaU.</p>
+                        <p>At the same time as programming, I was developing in cooking.</p>
+                        <p>Here is my Instagram account</p></h3>
+            <div id="gradient" class="gr2"></div>
+            <img id="phone" src="image/phone.png" alt="">
+            <img id="arrow2" src="image/strelka.png" alt="">
+            <h3 id="text5" ><p align="right">We also launched a startup during the first semester.</p><p align="right"> This is an internship search platform and this is what my website looks like.</p></h3>
+            <img id="arrow3" src="image/strelka — копия1.png" alt=""> 
+            <div id="gradient" class="gr3"></div>
+            <img id="laptop" src="image/laptop.png" alt="">
+        </div>
+
+        <div id="project">
+                <div id="gradient" class="gr4"></div>
+                <h1 id="prj_text">My projects</h1>
+                <div id="btn">
+                    <img id="btn_wall" src="image/projecct button/Rectangle 983.png">
+                    <img id="btn_lamp"  class="anim_btn" src="image/projecct button/Group 1935.png">
+                    <h3 id="btn-text">Projects for the first <p align="center">semester</p></h3>
+                    <div id="btn_m">
+                        <img id="btn_mini" src="image/projecct button/Rectangle 977.png">
+                        <h4 class="btn_tt"><a href="#">Watch</a></h4>
+                    </div>
+                    
+                </div>
+        </div>
+        <div id="end">
+            <h5 class="text1"><p>2022</p><p class="by">by Zhasmin Zharylgasynova</p></h5>
+        </div>
+    </div>
+
+</body>
+</html>
