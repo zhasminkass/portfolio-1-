@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,400;0,700;1,300&family=Preahvihear&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style2.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <title>Progect</title>
+</head>
+<body>
+    <div id="site">
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $("#header").on("click","a", function (event) {
+                event.preventDefault();
+                var id  = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({scrollTop: top}, 1500);
+            });
+        });
+        </script>
+
+        <div id="header">
+            <ul>
+                <li><img id="logo" src="image/Logo.png"></li>
+                <li id="home"><a href="index.html">Home</a></li>
+                <li id="adout1"><a href="#about">About me</a></li>
+                <li id="progects"><a href="index.html#project">My projects</a></li>
+            </ul>
+        </div>
+
+        <div id="project">
+            <div id="pr">
+                <h1 class="title">My projects</h1>
+                <div id="gradient" class="gr1"></div>
+                <div id="work">
+                    <h1 id="w1_1_text">To Do List</h1>
+                    <h3 id="w1_2_text"><p>This is a website where you can keep track of your business,</p><p align="center">organize your time management.</p></h3>
+                    <div id="w1">
+                        <img id="w1_1" src="image/projects/lap.png">
+                    </div>
+                    <div>
+                        <button class="btn_tt12"><a href="list.html">Go</a></button>
+                    </div>                
+                        <button class="btn_tt11" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Comment</button>
+
+                        <div id="id01" class="modal">
+                        
+                        <form class="modal-content animate" action="">
+                            <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                            
+                            </div>
+
+                            <div class="container">
+                            <label for="uname"><b>User name</b></label>
+                            <input type="text" placeholder="Enter your nickname" name="uname" required>
+
+                            <label for="psw"><b>Comments</b></label>
+                            <input type="text" placeholder="Enter the text" name="psw" required>
+                                
+                            <button type="submit">Send</button>
+                            
+                            </div>
+
+                            <div class="container" style="background-color:rgb(56 3 141 / 34%)">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                            
+                            </div>
+                        </form>
+                        </div>
+
+                        <script>
+
+                        var modal = document.getElementById('id01');
+
+
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                        </script>
+
+
+                </div>
+            </div>
+            <div id="pr2">
+                <div id="gradient" class="gr1"></div>
+                <div id="work">
+                    <h1 id="w1_1_text">Site with registration</h1>
+                    <h3 id="w1_2_text"><p>This is a website where you can register and</p><p align="center">get the information you need.</p></h3>
+                    <div id="w1">
+                        <img id="w1_1" src="image/projects/lap site.png">
+                        <img  class="ww1" src="image/projects/lap reg (1).png"
+                    </div>
+                    <div>
+                        <button class="btn_tt13"><a href="site.html">Go</a></button>
+                        <button class="btn_tt113" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Comment</button>
+                    </div>
+                    <div id="comment">
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="pr2">
+                <div id="gradient" class="gr11"></div>
+                <div id="work">
+                    <h1 id="w1_1_text">Site AZBA</h1>
+                    <h3 id="w1_2_text"><p>This is a website where you can find internships, </p><p align="center"> I did it for a IT-startup.</p></h3>
+                    <div id="w1">
+                        <img id="w1_1" src="image/laptop.png">
+                    </div>
+                    <div>
+                        <button class="btn_tt14"><a href="#">Go</a></button>
+                        <button class="btn_tt114" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Comment</button>
+                    </div>
+
+                        
+                    </div>
+                </div>
+            </div> 
+            <div id="pr2">
+                <div id="gradient" class="gr11"></div>
+                <div id="work">
+                    <h1 id="w1_1_text">Calculator</h1>
+                    <h3 id="w1_2_text"><p>This is a website where you can do various </p><p align="center">mathematical calculations.</p></h3>
+                    <div id="w1">
+                        <img id="w1_1" src="image/projects/calcu-transformed.png">
+                    </div>
+                    <div>
+                        <button class="btn_tt15"><a href="calculator.html">Go</a></button>
+                        <button class="btn_tt115" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Comment</button>
+                    </div>
+
+                        
+                    </div>
+                </div>
+            </div>  
+            <div id="pr2">
+                <div id="gradient" class="gr11"></div>
+                <div id="work">
+                    <h1 id="w1_1_text">Site registration</h1>
+                    <h3 id="w1_2_text"><p>This is a website where you can register, </p><p align="center"> I did it with JavaScript.</p></h3>
+                    <div id="w1">
+                        <img id="w1_1" src="image/projects/notif-transformed.png">
+                    </div>
+                    <div>
+                        <button class="btn_tt16"><a href="indexnotific.html">Go</a></button>
+                        <button class="btn_tt116" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Comment</button>
+                    </div>                     
+                    </div>
+                </div>
+            </div>                       
+        </div>
+        
+        
+        <div id="end">
+            <h5 class="text1"><p>2022</p><p class="by">by Zhasmin Zharylgasynova</p></h5>
+            <h5 id="inst-text">Instagram</h5>
+            <a href="https://instagram.com/____z.h.a.s.i.k?igshid=Yzg5MTU1MDY="><img id="inst" src="image/icons/Vector.png"></a>
+
+            <h5 id="git_text">GitHub</h5>
+            <a href="https://github.com/zhasminkass"><img id="git" src="image/icons/github (1).png"></a>
+        </div>
+    </div>
+</body>
+</html>
